@@ -1,18 +1,19 @@
 /* Dark semi-transparent background overlay */
 #success-message {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  overflow-y: auto; /* Allows scrolling inside the modal */
 }
 
-/* Modal container with more padding and responsive design */
+/* Modal container with padding and responsive design */
 .success-container {
   text-align: center;
   color: white;
@@ -23,15 +24,18 @@
   position: relative;
   max-width: 600px;
   width: 90%;
+  max-height: 90vh; /* Ensures content doesn't overflow too much */
+  overflow-y: auto; /* Scrollable modal content */
 }
 
-/* Increase the size of the success icon */
+/* Success icon styling */
 .success-icon {
   font-size: 60px;
   margin-bottom: 20px;
+  animation: bounce 0.8s ease;
 }
 
-/* Button styling with improved hover effects */
+/* Button and copy button styling */
 .button,
 .copy-button {
   background-color: white;
@@ -42,15 +46,16 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover,
 .copy-button:hover {
   background-color: #e9e9e9;
+  transform: scale(1.05);
 }
 
-/* PIX Section styling with better spacing */
+/* PIX section styling */
 .pix-section {
   margin-top: 20px;
   color: white;
@@ -72,9 +77,10 @@
   text-align: center;
   background-color: #f1f1f1;
   color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Tooltip Styling */
+/* Tooltip styling */
 .pix-tooltip {
   position: absolute;
   background-color: #28a745;
@@ -82,30 +88,32 @@
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px;
-  top: -60px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .show-tooltip {
   opacity: 1;
+  transform: translateX(-50%) translateY(10px);
 }
 
-/* YouTube Container with better alignment */
 .youtube-container {
   background-color: white;
   color: black;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .youtube-container:hover {
-  background-color: #f9f9f9;
+  background-color: white; /* Slightly darker red on hover */
 }
 
 /* WhatsApp link section styling */
@@ -120,6 +128,7 @@
   font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .whatsapp-link a:hover {

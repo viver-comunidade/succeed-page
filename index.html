@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Inscrição Retiro 2025</title>
-    <script></script>
   </head>
   <body>
+    <!-- Success message container, dominating the whole page -->
     <div id="success-message">
       <div class="success-container">
         <div class="success-icon">✔</div>
@@ -17,6 +17,8 @@
           Importante! O primeiro pagamento deve ser feito até 30.10.2024, para
           pagamentos à vista ou parcelado.
         </p>
+
+        <!-- PIX payment section -->
         <div class="pix-section">
           <p>Use o código PIX abaixo para completar o pagamento:</p>
           <div class="pix-code-container">
@@ -29,8 +31,10 @@
           </div>
         </div>
 
+        <!-- Button to copy PIX -->
         <div id="copy-pix-button" class="copy-button">Copiar Chave Pix</div>
 
+        <!-- Tooltip showing after copying -->
         <div id="pix-tooltip" class="pix-tooltip" style="display: none">
           PIX copiado com sucesso!
         </div>
@@ -49,6 +53,7 @@
           </iframe>
         </div>
 
+        <!-- WhatsApp link section -->
         <div class="whatsapp-link">
           <p>Acesse este link para entrar na minha comunidade do WhatsApp:</p>
           <a
@@ -61,9 +66,12 @@
           </a>
         </div>
 
+        <!-- Button to go back to the initial page -->
         <button id="back-button" class="button">Voltar à página inicial</button>
       </div>
     </div>
+
+    <!-- Include JavaScript functionality -->
     <script src="succeed.js"></script>
   </body>
 </html>
