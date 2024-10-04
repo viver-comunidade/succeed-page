@@ -6,6 +6,10 @@ const pixTooltip = document.getElementById("pix-tooltip");
 
 document.body.style.overflow = "hidden"; // Disables background scrolling
 
+backButton.addEventListener("click", () => {
+  window.location.href = "https://viver-comunidade.github.io/inscricao-retiro/";
+});
+
 copyPixButton.addEventListener("click", () => {
   pixCodeInput.select();
   pixCodeInput.setSelectionRange(0, 99999);
