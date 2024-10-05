@@ -26,6 +26,7 @@
   width: 90%;
   max-height: 90vh; /* Ensures content doesn't overflow too much */
   overflow-y: auto; /* Scrollable modal content */
+  padding-bottom: 100px;
 }
 
 /* Success icon styling */
