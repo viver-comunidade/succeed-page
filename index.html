@@ -8,68 +8,65 @@
   </head>
   <body>
     <!-- Success message container, dominating the whole page -->
-    <div id="success-message">
-      <div class="success-container">
-        <div class="success-icon">✔</div>
-        <h1>Inscrição realizada com sucesso!</h1>
-        <p>Obrigado por se inscrever. Deus Abençoe sua Vida!</p>
-        <p>
-          Importante! O primeiro pagamento deve ser feito até 30.10.2024, para
-          pagamentos à vista ou parcelado.
-        </p>
 
-        <!-- PIX payment section -->
-        <div class="pix-section">
-          <p>Use o código PIX abaixo para completar o pagamento:</p>
-          <div class="pix-code-container">
-            <input
-              type="text"
-              id="pix-code"
-              value="inscricoes.retiros@gmail.com"
-              readonly
-            />
-          </div>
-        </div>
+    <div class="success-icon">✔</div>
+    <h1>Inscrição realizada com sucesso!</h1>
+    <p>Obrigado por se inscrever. Deus Abençoe sua Vida!</p>
+    <p>
+      Importante! O primeiro pagamento deve ser feito até 30.10.2024, para
+      pagamentos à vista ou parcelado.
+    </p>
 
-        <!-- Button to copy PIX -->
-        <div id="copy-pix-button" class="copy-button">Copiar Chave Pix</div>
-
-        <!-- Tooltip showing after copying -->
-        <div id="pix-tooltip" class="pix-tooltip" style="display: none">
-          PIX copiado com sucesso!
-        </div>
-
-        <div id="youtube-redirect" class="youtube-container">
-          <p>Abaixo segue um vídeo ensinando a fazer pix agendado.</p>
-          <iframe
-            width="320"
-            height="180"
-            src="https://www.youtube.com/embed/ppX9OPxq6Qw"
-            title="Aprenda como fazer um PIX programado"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-
-        <!-- WhatsApp link section -->
-        <div class="whatsapp-link">
-          <p>Acesse este link para entrar na minha comunidade do WhatsApp:</p>
-          <a
-            href="https://chat.whatsapp.com/JQhNTx486120ZnXCFNlhZ2"
-            target="_blank"
-            id="whatsapp-button"
-            class="copy-button"
-          >
-            Clique aqui para acessar o WhatsApp
-          </a>
-        </div>
-
-        <!-- Button to go back to the initial page -->
-        <button id="back-button" class="button">Voltar à página inicial</button>
+    <!-- PIX payment section -->
+    <div class="pix-section">
+      <p>Use o código PIX abaixo para completar o pagamento:</p>
+      <div class="pix-code-container">
+        <input
+          type="text"
+          id="pix-code"
+          value="inscricoes.retiros@gmail.com"
+          readonly
+        />
       </div>
     </div>
+
+    <!-- Button to copy PIX -->
+    <div id="copy-pix-button" class="copy-button">Copiar Chave Pix</div>
+
+    <!-- Tooltip showing after copying -->
+    <div id="pix-tooltip" class="pix-tooltip" style="display: none">
+      PIX copiado com sucesso!
+    </div>
+
+    <div id="youtube-redirect" class="youtube-container">
+      <p>Abaixo segue um vídeo ensinando a fazer pix agendado.</p>
+      <iframe
+        width="320"
+        height="180"
+        src="https://www.youtube.com/embed/ppX9OPxq6Qw"
+        title="Aprenda como fazer um PIX programado"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <!-- WhatsApp link section -->
+    <div class="whatsapp-link">
+      <p>Acesse este link para entrar na minha comunidade do WhatsApp:</p>
+      <a
+        href="https://chat.whatsapp.com/JQhNTx486120ZnXCFNlhZ2"
+        target="_blank"
+        id="whatsapp-button"
+        class="copy-button"
+      >
+        Clique aqui para acessar o WhatsApp
+      </a>
+    </div>
+
+    <!-- Button to go back to the initial page -->
+    <button id="back-button" class="button">Voltar à página inicial</button>
 
     <!-- Include JavaScript functionality -->
     <script src="succeed.js"></script>

@@ -1,4 +1,9 @@
 /* Dark semi-transparent background overlay */
+
+body {
+  background-color: #28a745;
+  overflow-y: auto;
+}
 #success-message {
   position: fixed;
   top: 0;
