@@ -1,11 +1,11 @@
 /* Dark semi-transparent background overlay */
 
 body {
-  background-color: #28a745;
   overflow-y: auto;
+  height: 140vh;
 }
 #success-message {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,7 +29,7 @@ body {
   position: relative;
   max-width: 600px;
   width: 90%;
-  max-height: 90vh; /* Ensures content doesn't overflow too much */
+  max-height: 120vh; /* Ensures content doesn't overflow too much */
   overflow-y: auto; /* Scrollable modal content */
   padding-bottom: 100px;
 }
