@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden; /* Prevent scrolling of the body */
 }
 
 /* Success container */
@@ -20,7 +20,8 @@ body {
   max-width: 400px;
   width: 90%;
   text-align: center;
-  overflow-y: auto; /* Enable vertical scroll if content overflows */
+  max-height: 90vh; /* Limit the container height to 90% of the viewport */
+  overflow-y: auto; /* Allow scrolling only within the content */
 }
 
 /* Success icon */
@@ -57,8 +58,8 @@ p {
 }
 
 #pix-code {
-  width: 100%; /* Ensure the input field takes the full width of the container */
-  max-width: 350px; /* Set a maximum width so it doesn't stretch too much */
+  width: 100%;
+  max-width: 350px;
   padding: 10px;
   font-size: 16px;
   text-align: center;
@@ -102,8 +103,8 @@ p {
 .youtube-container iframe {
   width: 100%;
   border-radius: 8px;
-  height: auto; /* Adjust height to fit mobile */
-  max-height: 200px; /* Set a maximum height to avoid large videos */
+  height: auto;
+  max-height: 200px;
 }
 
 /* WhatsApp link */
@@ -148,8 +149,8 @@ p {
 @media (max-width: 480px) {
   .success-container {
     padding: 15px;
-    height: 100vh; /* Ensure it fits on mobile screens */
-    overflow-y: auto; /* Allow scrolling if necessary */
+    max-height: 90vh; /* Ensure it fits on mobile screens and scrolls if needed */
+    overflow-y: auto; /* Allow scrolling only within the content */
   }
 
   h1 {
