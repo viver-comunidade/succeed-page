@@ -1,37 +1,27 @@
-/* Dark semi-transparent background overlay */
-
 body {
-  overflow-y: auto;
-  height: 140vh;
-}
-#success-message {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  overflow-y: auto; /* Allows scrolling inside the modal */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable body scrolling when modal is open */
 }
 
 /* Modal container with padding and responsive design */
 .success-container {
+  position: fixed; /* Keep the modal fixed in the center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   background-color: #28a745;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  position: relative;
   max-width: 600px;
   width: 90%;
-  max-height: 120vh; /* Ensures content doesn't overflow too much */
-  overflow-y: auto; /* Scrollable modal content */
-  padding-bottom: 100px;
+  max-height: 80vh; /* Constrain the height for scrolling */
+  overflow-y: auto; /* Enable scrolling inside the modal */
 }
 
 /* Success icon styling */
@@ -145,6 +135,7 @@ body {
 @media (max-width: 600px) {
   .success-container {
     padding: 20px;
+    max-height: 80vh; /* Ensure content is scrollable on small devices */
   }
 
   .button,
